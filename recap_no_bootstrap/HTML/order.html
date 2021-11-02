@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../CSS/general.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/individual.css" />
+    <title>Order</title>
+  </head>
+  <body>
+    <header>
+      <h1>Orders</h1>
+    </header>
+
+    <nav>
+      <a href="/recap_no_bootstrap/index.html" target="_self">Home</a>
+      <a href="/recap_no_bootstrap/HTML/AboutUs.html" target="_self"
+        >About Us</a
+      >
+      <a href="/recap_no_bootstrap/HTML/menu.html" target="_self">Menu</a>
+      <a href="/recap_no_bootstrap/HTML/shop.html" target="_self">Shop</a>
+      <a href="/recap_no_bootstrap/HTML/order.html" target="_self">Order</a>
+    </nav>
+
+    <section>
+      <h4>Please fill in the form below</h4>
+
+      <form>
+        <div class="form-group">
+          <label for="name_input">Name:</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Please enter your name"
+            class="form-control"
+            id="name_input"
+          />
+        </div>
+        <div class="form-group">
+          <label for="address_input">Address:</label>
+          <textarea
+            name="address"
+            rows="5"
+            cols="20"
+            id="address_input"
+            class="form-control"
+            placeholder="Enter address here"
+          ></textarea>
+        </div>
+        <label for number_input> Order number:</label>
+        <input
+          type="number"
+          name="order_number"
+          placeholder="Enter order number"
+          id="number_input"
+          class="form-control"
+        />
+        <br />
+        <label>Coffee:</label>
+        <input
+          list="type_of_coffee"
+          placeholder="Type of coffee"
+          id="type_input"
+          class="form-control"
+        />
+        <datalist id="type_of_coffee">
+          <option value="Americano"></option>
+          <option value="Latte"></option>
+          <option value="Espresso"></option>
+        </datalist>
+        <br />
+        Size:
+        <input type="radio" name="drink_size" value="small" />Small
+        <input type="radio" name="drink_size" value="medium" />Medium
+        <input type="radio" name="drink_size" value="large" />Large
+        <br />
+        Extras:
+        <input type="checkbox" name="drink_extras" value="choc_shavings" />
+        Chocolate Shavings
+        <input type="checkbox" name="drink_extras" value="whipped_cream" />
+        Whipped Cream
+        <input type="checkbox" name="drink_extras" value="extra_sugar" />
+        Extra Sugar
+        <br />
+        Favourite Colour:
+        <input type="color" name="fav_col" />
+        <br />
+        <div class="btn-group" role="group" aria-label="...">
+          <button
+            type="submit"
+            name="submit_btn"
+            value="submit"
+            class="btn btn-default"
+            id="btn-class"
+          />SUBMIT
+          <button
+            type="reset"
+            name="reset_btn"
+            value="reset"
+            class="btn btn-default"
+          />
+          Reset
+          <button
+            type="button"
+            name="action_btn"
+            value="help"
+            class="btn btn-default"
+          />
+          Help
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
