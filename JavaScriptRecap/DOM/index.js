@@ -51,3 +51,38 @@ console.log(capsparas);
 for (let p of capsparas) {
   p.style.textTransform = "uppercase";
 }
+
+let changeTextContent = () => {
+  console.log("changing text...");
+  for (let p of borderparas) {
+    p.textContent = "This text has now been modified using event listeners";
+  }
+};
+
+let secondpara = document.querySelector("#secondPara");
+let thirdpara = document.querySelector("#thirdPara");
+let fourthpara = document.querySelector("#fourthPara");
+
+let button1 = document.querySelector("#firstButton");
+let button2 = document.querySelector("#secondButton");
+let button3 = document.querySelector("#thirdButton");
+let button4 = document.querySelector("#fourthButton");
+
+console.log(button1);
+
+button1.addEventListener("click", changeTextContent);
+button2.addEventListener("click", () => {
+  console.log("button2 has been pressed");
+  secondpara.style.color = "purple";
+});
+
+button3.addEventListener("click", () => {
+  console.log("button3 has been pressed");
+  thirdpara.style.fontSize = "20px";
+  thirdpara.style.color = "green";
+});
+
+button4.addEventListener("click", () => {
+  console.log("button4 has been pressed");
+  fourthpara.style.border = "0px";
+});
