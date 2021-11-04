@@ -33,6 +33,7 @@ let addCard = (data) => {
 
   newImg.classList.add("card-img-top");
   newImg.src = data.image_url;
+  newImg.alt = data.name;
   newImg.style.height = "20rem";
   newImg.style.width = "auto";
   newImg.style.display = "block";
